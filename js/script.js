@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 document.addEventListener("scroll", function()  {
 	if(window.scrollY > 50) {
-		navbar.classList.add("bg-color");
+		navbar.classList.add("nav-bg-color");
 	} else {
-		navbar.classList.remove("bg-color");
-		navbar.classList.add("bg-color-fade");
+		navbar.classList.remove("nav-bg-color");
+		navbar.classList.add("nav-bg-fade");
 	}	
 });
 

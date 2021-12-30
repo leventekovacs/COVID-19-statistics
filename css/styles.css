@@ -2,24 +2,28 @@
 
 html {
     scroll-behavior: smooth;
-    min-width: 360px;
+    
 }
 
 body {
     background-color: rgb(239 230 219);
-    font-family: 'Quicksand', sans-serif;
 }
 
-.img {
+.wrapper {
+    margin: 0;
     padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    min-width: 360px;
+    width: 100%;
+    overflow:hidden
 }
 
-.bg-color {
+.nav-bg-color {
     background-color: #d24d57 !important;
 }
 
-.bg-color-fade {
-    transition-duration: 0.5s;
+.nav-bg-fade {
+    transition-duration: .5s;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -114,9 +118,19 @@ body {
 .dropdown-content ul {
     margin: 0;
     padding: .25rem;
-    columns: 4;
-    -webkit-columns: 4;
-    -moz-columns: 4;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+@media screen and (min-width: 576px) {
+    .dropdown-content ul {
+        margin: 0;
+        padding: .25rem;
+        columns: 4;
+        -webkit-columns: 4;
+        -moz-columns: 4;
+    }
 }
 
 .dropdown-content li {
