@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <title>COVID-19 statisztikák</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-4" href="#">COVID-19</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 ms-auto pe-4">
+            <li class="nav-item mx-2">
+              <a class="nav-link"  target="_blank" aria-current="page" 
+              href="https://donate.covid19responsefund.org/"> 
+              <i class="bi bi-cash-coin"></i> Adományozás</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" target="_blank" 
+              href="https://oltokozpont.hu/hu/covid_vakcina_foglalas">Oltás</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" target="_blank" 
+              href="https://www.who.int/health-topics/coronavirus#tab=tab_3">Tünetek</a>
+            </li>
+          </ul> 
+        </div>
+      </div>
+  </nav>
+
+  <section class="banner-image">
+    <div class="row my-4 my-lg-0">
+      <img src="images/banner.jpg">
+    </div>
+  </section>
+
+  <section class="jumbotron jumbotron-fluid jumbotron-bg text-white 
+  my-4 py-4" id="main-jumbotron">
+    <div class="container">
+      <h1 class="display-4 p-2">COVID-19 adatok megismerése országonként</h1>
+      <p class="lead">Tudja meg a keresett ország statisztikáit a vírussal kapcsolatban.</p>
+    </div>
+  </section>
+
+  <section class="container my-5 pt-2 pb-5">
+    <div class="row">
+      <div class="d-none d-lg-block col-2">
+      </div>
+        <div class="col-9 col-sm-10 col-lg-7">
+          <div class="dropdown">
+            <input class="form-control search-box ps-3" type="search" placeholder="Hungary"
+             onClick="showCountriesToggle()" id="search-box">
+            <div class="dropdown-content my-3" id="countries-dropdown">
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-sm-2 col-lg-1" id="search-icon">
+          <form>
+            <button class="btn "type="submit"> <i class="bi bi-search"></i> </button>
+          </form>
+        </div>
+      </form>
+      <div class="d-none d-lg-block col-2">
+      </div>
+  </section>
+
+  <footer class="mt-4 container-fluid">
+    <div class="container-lg container-fluid">
+      <div class="d-flex align-items-center flex-column flex-sm-row flex-wrap">
+        
+        <div class="col-12 col-md-2 col-lg-2 my-3 py-3 my-md-5 py-md-5">
+          <div class="d-flex pe-sm-4 flex-column">
+            <p>Copyright © 2021</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-3 my-3 py-3 my-md-5 py-md-5">  
+          <div class="d-flex align-items-baseline flex-column">
+            <div class="col">
+              <h5 class="mb-2">Elérhetőség</h5>
+            </div>
+            <div class="col">
+              <p>kovacs.levente071@gmail.com</p>
+             </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-5 my-3 py-3 my-md-5 py-md-5">
+          <div class="d-flex align-items-baseline flex-column">
+            <div class="col">
+              <h5 class="mb-2">Az oldalról</h5>
+            </div>
+            <div class="col">
+              <p>Az oldal tanulás céljából készült, ingyenes <a href=
+                "https://rapidapi.com/api-sports/api/covid-193/" target="_blank"
+                class="link">API</a>-t használ.</p>
+             </div> 
+          </div>
+        </div>
+
+        <div class="col-12 col-md-2 col-lg-2 my-3 py-3 my-md-5 py-md-5">
+          <div class="d-flex flex-column">
+            <ul>
+              <li class="mb-2">
+                <i class="bi bi-github"></i>
+                <a href="https://github.com/leventekovacs" target="_blank"> Github</a>
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-linkedin"></i>
+                <a href="https://www.linkedin.com/in/levente-kov%C3%A1cs-0a9497221/"
+                target="_blank"> Linkedin</a>
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-person-circle"></i>
+                <a href="#" target="_blank"> Portfolio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.bundle.min.js""></script>
+</body>
+</html>
