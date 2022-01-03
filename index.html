@@ -56,32 +56,42 @@
     </div>
   </section>
 
-  <section class="container my-5 pt-2 pb-5">
+  <section class="container my-3 py-2">
     <div class="row">
-
       <div class="d-none d-lg-block col-2">
       </div>
 
         <div class="col-9 col-sm-10 col-lg-7">
           <div class="dropdown">
             <input class="form-control search-box ps-3" type="search" placeholder="Hungary"
-             onClick="showCountriesToggle()" id="search-box">
-            <div class="dropdown-content my-3" id="countries-dropdown">
-              <ul>
-              </ul>
-            </div>
+             onClick="showCountriesToggle()" onKeyUp="countriesListFilter()" id="search-box">
           </div>
         </div>
 
         <div class="col-3 col-sm-2 col-lg-1" id="search-icon">
           <form>
-            <button class="btn "type="submit"> <i class="bi bi-search"></i> </button>
+            <button class="btn" type="submit"> <i class="bi bi-search"></i> </button>
           </form>
         </div>
 
-
       <div class="d-none d-lg-block col-2">
       </div>
+    </div>
+    
+    <div class="row my-3">
+      <div class="col-1 col-lg-2"></div>
+        <div class="col-5">
+          <div class="row align-items-center flex-column dropdown-content"></div>
+        </div>
+      <div class="col-5"></div>
+    </div>
+  </section>
+
+  <section class="container-fluid mt-2 mb-5" id="statistics-container">
+    <div class="row mb-4"> </div>
+    <div class="row justify-content-center mb-4"> </div>
+    <div class="row justify-content-center align-items-stretch"> </div>
+    <div class="row justify-content-center align-items-stretch mb-sm-4"> </div>
   </section>
 
   <footer class="mt-4 container-fluid">
